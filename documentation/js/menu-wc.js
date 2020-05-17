@@ -55,13 +55,17 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/NgxNeshanModule.html" data-type="entity-link">NgxNeshanModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-NgxNeshanModule-bfce63a702457e6a93a5d9fec3e4dcbf"' : 'data-target="#xs-components-links-module-NgxNeshanModule-bfce63a702457e6a93a5d9fec3e4dcbf"' }>
+                                            'data-target="#components-links-module-NgxNeshanModule-e389c36d9c0021bb819326dc4340b265"' : 'data-target="#xs-components-links-module-NgxNeshanModule-e389c36d9c0021bb819326dc4340b265"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-NgxNeshanModule-bfce63a702457e6a93a5d9fec3e4dcbf"' :
-                                            'id="xs-components-links-module-NgxNeshanModule-bfce63a702457e6a93a5d9fec3e4dcbf"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-NgxNeshanModule-e389c36d9c0021bb819326dc4340b265"' :
+                                            'id="xs-components-links-module-NgxNeshanModule-e389c36d9c0021bb819326dc4340b265"' }>
+                                            <li class="link">
+                                                <a href="components/NeshanStaticComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">NeshanStaticComponent</a>
+                                            </li>
                                             <li class="link">
                                                 <a href="components/NgxNeshanComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxNeshanComponent</a>

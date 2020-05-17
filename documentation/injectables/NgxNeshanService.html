@@ -506,15 +506,15 @@ export class NgxNeshanService {
       throw new Error(&quot;The parameter &#x27;NESHAN_API_KEY&#x27; must be define.&quot;);
     this.apiKey &#x3D; apiKey;
   }
-/**
- *سرویس جستجوی مکان محور
- *
- * @param {string} searchTerm عبارت جستجو
- * @param {NsLocation} location مختصات مربوط به مرکز جستجو
- * @returns {Observable&lt;NsSearchResult&gt;}
- * @memberof NgxNeshanService
- */
-search(searchTerm: string, location: NsLocation): Observable&lt;NsSearchResult&gt; {
+  /**
+   *سرویس جستجوی مکان محور
+   *
+   * @param {string} searchTerm عبارت جستجو
+   * @param {NsLocation} location مختصات مربوط به مرکز جستجو
+   * @returns {Observable&lt;NsSearchResult&gt;}
+   * @memberof NgxNeshanService
+   */
+  search(searchTerm: string, location: NsLocation): Observable&lt;NsSearchResult&gt; {
 
     if (searchTerm &#x3D;&#x3D;&#x3D; undefined || searchTerm &#x3D;&#x3D;&#x3D; null)
       throw new Error(&quot;The parameter &#x27;searchTerm&#x27; must be define.&quot;);
@@ -530,14 +530,14 @@ search(searchTerm: string, location: NsLocation): Observable&lt;NsSearchResult&g
       })
     });
   }
-/**
- *سرویس تبدیل مختصات جغرافیایی به آدرس
- *
- * @param {NsLocation} location مختصات مورد نظر
- * @returns {Observable&lt;NsReverseResult&gt;}
- * @memberof NgxNeshanService
- */
-reverseGeocoding(location: NsLocation): Observable&lt;NsReverseResult&gt;{
+  /**
+   *سرویس تبدیل مختصات جغرافیایی به آدرس
+   *
+   * @param {NsLocation} location مختصات مورد نظر
+   * @returns {Observable&lt;NsReverseResult&gt;}
+   * @memberof NgxNeshanService
+   */
+  reverseGeocoding(location: NsLocation): Observable&lt;NsReverseResult&gt; {
     if (location &#x3D;&#x3D;&#x3D; undefined || location &#x3D;&#x3D;&#x3D; null)
       throw new Error(&quot;The parameter &#x27;location&#x27; must be define.&quot;);
 
