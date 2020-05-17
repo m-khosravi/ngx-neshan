@@ -1,27 +1,27 @@
-# NgxNeshan
+# NGX NESHAN
+An Angular 6+ library to access [Neshan Maps Platform](https://developers.neshan.org/) 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Getting Start
+----
+Signup and get your API ACCESS KEY at [Neshan Developers Panel](https://developers.neshan.org/panel) 
 
-## Development server
+Usage
+-----
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Import `NgxNeshanModule, NESHAN_API_KEY` into your app's modules:
 
-## Code scaffolding
+``` typescript
+import { NgxNeshanModule, NESHAN_API_KEY } from 'projects/ngx-neshan/src/public-api';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+@NgModule({
+  imports: [
+    ...
+    NgxNeshanModule,
+    ...
+  ],
+  providers: [
+    { provide: NESHAN_API_KEY, useValue: 'NESHAN_API_KEY' }
+  ],
+})
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
