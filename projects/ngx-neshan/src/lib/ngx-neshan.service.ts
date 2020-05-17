@@ -31,15 +31,15 @@ export class NgxNeshanService {
       throw new Error("The parameter 'NESHAN_API_KEY' must be define.");
     this.apiKey = apiKey;
   }
-/**
- *سرویس جستجوی مکان محور
- *
- * @param {string} searchTerm عبارت جستجو
- * @param {NsLocation} location مختصات مربوط به مرکز جستجو
- * @returns {Observable<NsSearchResult>}
- * @memberof NgxNeshanService
- */
-search(searchTerm: string, location: NsLocation): Observable<NsSearchResult> {
+  /**
+   *سرویس جستجوی مکان محور
+   *
+   * @param {string} searchTerm عبارت جستجو
+   * @param {NsLocation} location مختصات مربوط به مرکز جستجو
+   * @returns {Observable<NsSearchResult>}
+   * @memberof NgxNeshanService
+   */
+  search(searchTerm: string, location: NsLocation): Observable<NsSearchResult> {
 
     if (searchTerm === undefined || searchTerm === null)
       throw new Error("The parameter 'searchTerm' must be define.");
@@ -55,14 +55,14 @@ search(searchTerm: string, location: NsLocation): Observable<NsSearchResult> {
       })
     });
   }
-/**
- *سرویس تبدیل مختصات جغرافیایی به آدرس
- *
- * @param {NsLocation} location مختصات مورد نظر
- * @returns {Observable<NsReverseResult>}
- * @memberof NgxNeshanService
- */
-reverseGeocoding(location: NsLocation): Observable<NsReverseResult>{
+  /**
+   *سرویس تبدیل مختصات جغرافیایی به آدرس
+   *
+   * @param {NsLocation} location مختصات مورد نظر
+   * @returns {Observable<NsReverseResult>}
+   * @memberof NgxNeshanService
+   */
+  reverseGeocoding(location: NsLocation): Observable<NsReverseResult> {
     if (location === undefined || location === null)
       throw new Error("The parameter 'location' must be define.");
 

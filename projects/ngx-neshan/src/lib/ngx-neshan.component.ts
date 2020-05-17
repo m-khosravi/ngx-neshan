@@ -4,7 +4,7 @@ import { NgxNeshanService } from './ngx-neshan.service';
 import { NsLocation } from './models/ns-location';
 
 @Component({
-  selector: 'ngx-neshan-sample',
+  selector: 'neshan-sample',
   template: `
     <p>
       ngx-neshan works!
@@ -14,6 +14,8 @@ import { NsLocation } from './models/ns-location';
       <ul>
         <li *ngFor="let it of item.items">
           <p>{{it.title}}</p>
+          <p>{{it.address}}</p>
+          <p>lat: {{it.location.latitude}}, long: {{it.location.longitude}}</p>
         </li>
       </ul>
     </div>
@@ -23,16 +25,7 @@ import { NsLocation } from './models/ns-location';
 })
 export class NgxNeshanComponent implements OnInit {
 
-  //@Input() searchTerm: string;
-
-  private _searchTerm: string;
-  public get searchTerm(): string {
-    return this._searchTerm;
-  }
-  @Input() public set searchTerm(v: string) {
-    this._searchTerm = v;
-  }
-
+  @Input() searchTerm: string;
   @Input() searchCenter: NsLocation;
 
   item: NsSearchResult;
