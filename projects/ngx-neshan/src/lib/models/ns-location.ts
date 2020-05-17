@@ -11,7 +11,7 @@ export class NsLocation {
    * @type {number}
    * @memberof NsLocation
    */
-  latitude: number = 0;
+  latitude: number = 35.698209;
 
   /**
    *طول جغرافیایی (longitude)
@@ -19,5 +19,5 @@ export class NsLocation {
    * @type {number}
    * @memberof NsLocation
    */
-  longitude: number = 0;
+  longitude: number = 51.333181;
 }
