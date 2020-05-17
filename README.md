@@ -5,13 +5,16 @@ Getting Start
 ----
 Signup and get your API ACCESS KEY at [Neshan Developers Panel](https://developers.neshan.org/panel) 
 
+Installation
+----
+`npm i ngx-neshan --save`
+
 Usage
 -----
-
 Import `NgxNeshanModule, NESHAN_API_KEY` into your app's modules:
 
 ``` typescript
-import { NgxNeshanModule, NESHAN_API_KEY } from 'projects/ngx-neshan/src/public-api';
+import { NgxNeshanModule, NESHAN_API_KEY } from 'ngx-neshan';
 
 @NgModule({
   imports: [

@@ -1,6 +1,21 @@
 {
   "name": "ngx-neshan",
-  "version": "0.0.2",
+  "version": "0.0.4",
+  "description": "Angular 6+ Neshan map (neshan.org) service",
+  "license": "MIT",
+  "author": {
+    "name": "Mehdi Khosravi",
+    "email": "m-khosravi@outlook.com",
+    "url": "http://github.com/m-khosravi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-khosravi/ngx-neshan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m-khosravi/ngx-neshan/issues"
+  },
+  "homepage": "https://github.com/m-khosravi/ngx-neshan",
   "peerDependencies": {
     "@angular/common": "^9.1.7",
     "@angular/core": "^9.1.7",
