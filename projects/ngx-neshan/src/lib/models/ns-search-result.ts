@@ -4,6 +4,5 @@ export class NsSearchResult {
   count: number;
   items: NsSearchItem[];
 }
-}
 
 
