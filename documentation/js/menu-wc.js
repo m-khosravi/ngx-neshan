@@ -90,16 +90,37 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="classes/NsAddressComp.html" data-type="entity-link">NsAddressComp</a>
                             </li>
                             <li class="link">
+                                <a href="classes/NsDirectionResult.html" data-type="entity-link">NsDirectionResult</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/NsDistance.html" data-type="entity-link">NsDistance</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/NsLeg.html" data-type="entity-link">NsLeg</a>
+                            </li>
+                            <li class="link">
                                 <a href="classes/NsLocation.html" data-type="entity-link">NsLocation</a>
                             </li>
                             <li class="link">
+                                <a href="classes/NsOverviewpolyline.html" data-type="entity-link">NsOverviewpolyline</a>
+                            </li>
+                            <li class="link">
                                 <a href="classes/NsReverseResult.html" data-type="entity-link">NsReverseResult</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/NsRoute.html" data-type="entity-link">NsRoute</a>
                             </li>
                             <li class="link">
                                 <a href="classes/NsSearchItem.html" data-type="entity-link">NsSearchItem</a>
                             </li>
                             <li class="link">
                                 <a href="classes/NsSearchResult.html" data-type="entity-link">NsSearchResult</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/NsStep.html" data-type="entity-link">NsStep</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/NsXYLocation.html" data-type="entity-link">NsXYLocation</a>
                             </li>
                         </ul>
                     </li>
@@ -112,7 +133,7 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </div>
                             <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
                                 <li class="link">
-                                    <a href="injectables/NgxNeshanService.html" data-type="entity-link">NgxNeshanService</a>
+                                    <a href="injectables/NeshanService.html" data-type="entity-link">NeshanService</a>
                                 </li>
                             </ul>
                         </li>

@@ -101,7 +101,7 @@
     &lt;li *ngFor&#x3D;&quot;let it of item.items&quot;&gt;
       &lt;p&gt;{{it.title}}&lt;/p&gt;
       &lt;p&gt;{{it.address}}&lt;/p&gt;
-      &lt;p&gt;lat: {{it.location.latitude}}, long: {{it.location.longitude}}&lt;/p&gt;
+      &lt;p&gt;lat: {{it.location.y}}, long: {{it.location.x}}&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
@@ -199,7 +199,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(neshan: <a href="../injectables/NgxNeshanService.html">NgxNeshanService</a>)</code>
+<code>constructor(neshan: <a href="../injectables/NeshanService.html">NeshanService</a>)</code>
                     </td>
                 </tr>
                         <tr>
@@ -225,7 +225,7 @@
                                                         <td>neshan</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/NgxNeshanService.html" target="_self" >NgxNeshanService</a></code>
+                                                                        <code><a href="../injectables/NeshanService.html" target="_self" >NeshanService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -398,7 +398,7 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input, Output, EventEmitter } from &#x27;@angular/core&#x27;;
 import { NsSearchResult } from &#x27;./models/ns-search-result&#x27;;
-import { NgxNeshanService } from &#x27;./ngx-neshan.service&#x27;;
+import { NeshanService } from &#x27;./ngx-neshan.service&#x27;;
 import { NsLocation } from &#x27;./models/ns-location&#x27;;
 
 @Component({
@@ -413,7 +413,7 @@ import { NsLocation } from &#x27;./models/ns-location&#x27;;
         &lt;li *ngFor&#x3D;&quot;let it of item.items&quot;&gt;
           &lt;p&gt;{{it.title}}&lt;/p&gt;
           &lt;p&gt;{{it.address}}&lt;/p&gt;
-          &lt;p&gt;lat: {{it.location.latitude}}, long: {{it.location.longitude}}&lt;/p&gt;
+          &lt;p&gt;lat: {{it.location.y}}, long: {{it.location.x}}&lt;/p&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -430,7 +430,7 @@ export class NgxNeshanComponent implements OnInit {
 
   @Output() SearchComplete: EventEmitter&lt;NsSearchResult&gt; &#x3D; new EventEmitter&lt;NsSearchResult&gt;();
 
-  constructor(private neshan: NgxNeshanService) { }
+  constructor(private neshan: NeshanService) { }
 
 
   ngOnInit(): void {
@@ -490,7 +490,7 @@ export class NgxNeshanComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>  ngx-neshan works!</p><div *ngIf="item">  <p>تعداد: {{item.count}}</p>  <ul>    <li *ngFor="let it of item.items">      <p>{{it.title}}</p>      <p>{{it.address}}</p>      <p>lat: {{it.location.latitude}}, long: {{it.location.longitude}}</p>    </li>  </ul></div></div>'
+        var COMPONENT_TEMPLATE = '<div><p>  ngx-neshan works!</p><div *ngIf="item">  <p>تعداد: {{item.count}}</p>  <ul>    <li *ngFor="let it of item.items">      <p>{{it.title}}</p>      <p>{{it.address}}</p>      <p>lat: {{it.location.y}}, long: {{it.location.x}}</p>    </li>  </ul></div></div>'
     var COMPONENTS = [{'name': 'NeshanStaticComponent', 'selector': 'neshan-static'},{'name': 'NgxNeshanComponent', 'selector': 'neshan-sample'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NgxNeshanComponent'};
