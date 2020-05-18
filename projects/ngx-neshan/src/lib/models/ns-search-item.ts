@@ -1,4 +1,4 @@
-import { NsLocation } from './ns-location';
+import { NsXYLocation } from './ns-location';
 
 export class NsSearchItem {
   title: string;
@@ -7,5 +7,5 @@ export class NsSearchItem {
   region: string;
   type: string;
   category: string;
-  location: NsLocation;
+  location: NsXYLocation;
 }

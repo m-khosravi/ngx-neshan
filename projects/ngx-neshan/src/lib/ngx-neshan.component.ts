@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NsSearchResult } from './models/ns-search-result';
-import { NgxNeshanService } from './ngx-neshan.service';
+import { NeshanService } from './ngx-neshan.service';
 import { NsLocation } from './models/ns-location';
 
 @Component({
@@ -15,7 +15,7 @@ import { NsLocation } from './models/ns-location';
         <li *ngFor="let it of item.items">
           <p>{{it.title}}</p>
           <p>{{it.address}}</p>
-          <p>lat: {{it.location.latitude}}, long: {{it.location.longitude}}</p>
+          <p>lat: {{it.location.y}}, long: {{it.location.x}}</p>
         </li>
       </ul>
     </div>
@@ -32,7 +32,7 @@ export class NgxNeshanComponent implements OnInit {
 
   @Output() SearchComplete: EventEmitter<NsSearchResult> = new EventEmitter<NsSearchResult>();
 
-  constructor(private neshan: NgxNeshanService) { }
+  constructor(private neshan: NeshanService) { }
 
 
   ngOnInit(): void {

@@ -4,6 +4,7 @@ import { NsLocation } from './models/ns-location';
 import { Observable } from 'rxjs';
 import { NsSearchResult } from './models/ns-search-result';
 import { NsReverseResult } from './models/ns-reverse-result';
+import { NsDirectionResult } from './models';
 
 export const NESHAN_BASE_URL = new InjectionToken<string>('NESHAN_BASE_URL');
 export const NESHAN_API_KEY = new InjectionToken<string>('NESHAN_API_KEY');
@@ -17,7 +18,7 @@ export const NESHAN_API_KEY = new InjectionToken<string>('NESHAN_API_KEY');
   providedIn: 'root'
 })
 
-export class NgxNeshanService {
+export class NeshanService {
 
   private http: HttpClient;
   private baseUrl: string;
@@ -69,6 +70,36 @@ export class NgxNeshanService {
     let url = this.baseUrl + `/v2/reverse?lat=${location.latitude}&lng=${location.longitude}`
 
     return this.http.get<NsReverseResult>(url, {
+      headers: new HttpHeaders({
+        "Accept": "application/json",
+        "Api-Key": this.apiKey,
+      })
+    });
+  }
+
+  direction(
+    origin: NsLocation,
+    destinations: NsLocation,
+    waypoints: NsLocation[] = [],
+    avoidTrafficZone: boolean = false,
+    avoidOddEvenZone: boolean = false,
+    alternative = false
+  ): Observable<NsDirectionResult> {
+    if (origin === undefined || origin === null)
+      throw new Error("The parameter 'origin' must be define.");
+    if (destinations === undefined || destinations === null)
+      throw new Error("The parameter 'destinations' must be define.");
+
+    let url = this.baseUrl + `/v2/direction?origin=${origin.toString()}`
+      + `&destination=${destinations.toString()}`
+      + `&avoidTrafficZone=${avoidTrafficZone}`
+      + `&avoidOddEvenZone=${avoidOddEvenZone}`
+      + `&alternative=${alternative}`;
+    console.log(waypoints);
+    if (waypoints.length > 0)
+      url = url + `&waypoints=${waypoints.join('|')}`;
+
+    return this.http.get<NsDirectionResult>(url, {
       headers: new HttpHeaders({
         "Accept": "application/json",
         "Api-Key": this.apiKey,
