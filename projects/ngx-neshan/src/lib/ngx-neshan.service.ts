@@ -95,7 +95,6 @@ export class NeshanService {
       + `&avoidTrafficZone=${avoidTrafficZone}`
       + `&avoidOddEvenZone=${avoidOddEvenZone}`
       + `&alternative=${alternative}`;
-    console.log(waypoints);
     if (waypoints.length > 0)
       url = url + `&waypoints=${waypoints.join('|')}`;
 

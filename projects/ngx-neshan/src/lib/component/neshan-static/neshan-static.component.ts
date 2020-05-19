@@ -38,15 +38,10 @@ export class NeshanStaticComponent implements OnInit, OnChanges {
   }
 
   generateStaticMap() {
-    console.log('generate static url');
-
     this.imgUrl = this.baseUrl
       + `/v2/static?key=${this.apiKey}&type=${this.type}`
       + `&zoom=${this.zoom}&center=${this.location.latitude},${this.location.longitude}`
       + `&width=${this.width}&height=${this.height}&marker=${this.marker}`;
-
-    console.log(this.imgUrl);
-
   }
 
 }

@@ -46,7 +46,6 @@ export class NgxNeshanComponent implements OnInit {
         this.neshan.search(this.searchTerm, loc)
           .subscribe(res => {
             this.item = res;
-            console.log(this.item);
             this.SearchComplete.emit(this.item);
           })
       });
@@ -55,7 +54,6 @@ export class NgxNeshanComponent implements OnInit {
       this.neshan.search(this.searchTerm, loc)
         .subscribe(res => {
           this.item = res;
-          console.log(this.item);
           this.SearchComplete.emit(this.item);
         })
     }

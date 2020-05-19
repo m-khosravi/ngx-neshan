@@ -1,6 +1,6 @@
 {
   "name": "ngx-neshan",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Angular 6+ Neshan map (neshan.org) service",
   "license": "MIT",
   "author": {
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/m-khosravi/ngx-neshan",
   "peerDependencies": {
-    "@angular/common": "^9.1.7",
-    "@angular/core": "^9.1.7",
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
     "tslib": "^1.10.0"
   }
 }
