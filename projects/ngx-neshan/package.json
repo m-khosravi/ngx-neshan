@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/m-khosravi/ngx-neshan",
   "peerDependencies": {
-    "@angular/common": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "tslib": "^1.10.0"
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0",
   }
 }
