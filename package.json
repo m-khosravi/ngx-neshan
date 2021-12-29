@@ -1,6 +1,6 @@
 {
   "name": "ngx-neshan",
-  "version": "0.0.0",
+  "version": "0.0.12",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
